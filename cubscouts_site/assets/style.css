@@ -1,0 +1,48 @@
+/* assets/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;600&display=swap');
+
+:root {
+  --pack-blue:#0033A0; --pack-gold:#FDB827; --ink:#eaf1ff; --muted:#a9b7d9;
+  --bg-grad: radial-gradient(900px 360px at 10% -10%, rgba(7,58,158,.55), transparent),
+             radial-gradient(700px 280px at 90% 0%, rgba(0,51,160,.40), transparent),
+             linear-gradient(135deg, #02173f, #001b57 45%, #022b8a 85%);
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg-grad); }
+
+/* Sticky nav */
+nav.container-fluid { position: sticky; top: 0; z-index: 1000; backdrop-filter: saturate(140%) blur(10px); background: rgba(0,15,40,.65); border-bottom:1px solid rgba(255,255,255,.12); }
+nav a { font-family: Poppins, Inter, sans-serif; font-weight:600; color:#f3f6ff; }
+nav a:hover{ color:#fff; }
+.brand { display:flex; align-items:center; gap:.75rem; font-weight:700; color:#fff; }
+.brand-img{ height:64px; width:auto; display:block; filter: drop-shadow(0 4px 12px rgba(0,0,0,.45)); }
+
+header.hero { position: relative; color: #fff; padding: 6.5rem 0 0; overflow: hidden; }
+header.hero .spark { position:absolute; inset:0; background-image: radial-gradient(rgba(255,255,255,.14) 1px, transparent 1px); background-size: 18px 18px; mask-image: linear-gradient(to bottom, rgba(0,0,0,.65), transparent 70%); }
+.hero-grid{display:grid; grid-template-columns: 1.2fr .8fr; gap:2rem; align-items:center;}
+.hero-title{font-family:Poppins,Inter,sans-serif; font-weight:800; font-size:clamp(2rem,4vw,3.5rem); line-height:1.05; margin:.25rem 0 .5rem;}
+.highlight{background: linear-gradient(90deg,#fff 0%, #eaf1ff 40%, #ffeaa7 100%); -webkit-background-clip:text; background-clip:text; color:transparent; text-shadow: 0 2px 18px rgba(0,0,0,.25)}
+.eyebrow{letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.9}
+.hero-sub{font-size:1.125rem; margin:.25rem 0 1rem; opacity:.95}
+.hero-badge{display:flex; align-items:center; justify-content:center}
+.hero-logo{max-width:200px; width:100%; filter: drop-shadow(0 12px 28px rgba(0,0,0,.45));}
+
+.card{ background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:1rem; box-shadow: 0 10px 24px rgba(0,0,0,.25); }
+.info-card{ color:#eaf1ff; background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); }
+.muted { color: var(--muted); }
+
+.grid-photos { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 1rem; }
+.grid-photos img { width:100%; height:240px; object-fit:cover; border-radius:12px; box-shadow: 0 8px 18px rgba(0,0,0,.35); cursor: zoom-in; }
+
+.cta-band{ position:relative; background: linear-gradient(135deg, #001b57, #0033A0 60%, #2458d1); color:#fff; padding: 2.25rem 0; overflow:hidden; border-top:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08); }
+
+footer { background:#0b1224; color:#c9d4f5; padding:2rem 0; border-top:1px solid rgba(255,255,255,.08); }
+
+.highlight-bar { background: linear-gradient(135deg, #001b57, #0033A0 60%, #2458d1); color: #fff; padding: .75rem 1rem; border-radius: 10px; box-shadow: 0 8px 18px rgba(0, 0, 0, .25); border: 1px solid rgba(255, 255, 255, .15); font-weight: 600; text-align: center; }
+
+@media (max-width: 900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-badge{order:-1; margin-bottom:1rem}
+  .hero-logo{max-width:160px}
+}

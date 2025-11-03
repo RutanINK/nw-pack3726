@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leaders & Contact – Pack 3726</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div data-include="/partials/header.html"></div>
+  <main class="container" style="padding-top:1rem">
+    <h2>Leaders & Contact</h2>
+    <article class="card">
+      <header><strong>Volunteer Leadership</strong></header>
+      <ul>
+        <li><strong>Cubmaster:</strong> Jesse Rutan</li>
+        <li><strong>Chartered Organization:</strong> North Webster Lions Club</li>
+      </ul>
+    </article>
+
+    <h3 id="contact-form-embed">Send us a message</h3>
+    <div class="card" style="padding:1rem;">
+      <form name="contact-pack3726" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="contact-pack3726" />
+        <p style="display:none">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+        <div class="grid">
+          <label>Parent/Guardian Name
+            <input name="name" required />
+          </label>
+          <label>Email
+            <input type="email" name="email" required />
+          </label>
+        </div>
+        <div class="grid">
+          <label>Phone (optional)
+            <input type="tel" name="phone" />
+          </label>
+          <label>Scout Grade (K–5)
+            <select name="grade">
+              <option value="K">K</option><option value="1">1</option>
+              <option value="2">2</option><option value="3">3</option>
+              <option value="4">4</option><option value="5">5</option>
+            </select>
+          </label>
+        </div>
+        <label>Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <div style="display:flex;gap:.5rem;align-items:center;">
+          <button type="submit">Send</button>
+          <a class="secondary" href="mailto:hello@nw-pack3726.com?subject=Pack%203726%20Inquiry">Or email us directly</a>
+        </div>
+      </form>
+    </div>
+  </main>
+  <div data-include="/partials/footer.html"></div>
+</body>
+</html>
