@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<details class="card den">
+<summary style="display:flex;align-items:center;gap:.75rem;cursor:pointer;">
+<img class="den-mark" alt="Wolf rank icon" src="https://www.scouting.org/wp-content/uploads/2023/04/Wolf1.png" loading="lazy" decoding="async" width="42" height="42"/>
+<strong>Wolves</strong> <span class="muted">• 2nd Grade</span>
+</summary>
+<div class="more">
+<p>Build skills in first aid, camping prep, and citizenship. More independence and teamwork.</p>
+<ul>
+<li>Typical adventures: Council Fire, Call of the Wild</li>
+<li>Focus areas: responsibility, service, outdoor readiness</li>
+</ul>
+</div>
+</details>
+<!-- Bears -->
+<details class="card den">
+<summary style="display:flex;align-items:center;gap:.75rem;cursor:pointer;">
+<img class="den-mark" alt="Bear rank icon" src="https://www.scouting.org/wp-content/uploads/2023/04/Bear1.png" loading="lazy" decoding="async" width="42" height="42"/>
+<strong>Bears</strong> <span class="muted">• 3rd Grade</span>
+</summary>
+<div class="more">
+<p>Introduction to tools and outdoor cooking, planning, and leadership within the den.</p>
+<ul>
+<li>Typical adventures: Bear Claws, Bear Necessities</li>
+<li>Focus areas: safety, planning, leadership</li>
+</ul>
+</div>
+</details>
+<!-- Webelos -->
+<details class="card den">
+<summary style="display:flex;align-items:center;gap:.75rem;cursor:pointer;">
+<img class="den-mark" alt="Webelos rank icon" src="https://www.scouting.org/wp-content/uploads/2023/04/Webelos1.png" loading="lazy" decoding="async" width="42" height="42"/>
+<strong>Webelos</strong> <span class="muted">• 4th Grade</span>
+</summary>
+<div class="more">
+<p>Adventure pins, camping skills, and leadership. Transition preparation toward <strong>Troop 726</strong>.</p>
+<ul>
+<li>Typical adventures: First Responder, Outdoorsman</li>
+<li>Focus areas: skills mastery, leadership, camping</li>
+</ul>
+</div>
+</details>
+<!-- Arrow of Light -->
+<details class="card den">
+<summary style="display:flex;align-items:center;gap:.75rem;cursor:pointer;">
+<img class="den-mark" alt="Arrow of Light rank icon" src="https://www.scouting.org/wp-content/uploads/2023/04/Arrows-of-Ligth-1.png" loading="lazy" decoding="async" width="42" height="42"/>
+<strong>Arrow of Light</strong> <span class="muted">• 5th Grade</span>
+</summary>
+<div class="more">
+<p>Transition year with increased responsibility. Bridging and introduction to <strong>Troop 726</strong>.</p>
+<ul>
+<li>Typical adventures: Building a Better World, Scouting Adventure</li>
+<li>Focus areas: leadership, service, transition</li>
+</ul>
+</div>
+</details>
+</div>
+</section>
+</main>
+
+
+<div data-include="/partials/footer.html"></div>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

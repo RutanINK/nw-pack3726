@@ -1,0 +1,68 @@
+// Include loader for partials
+if (gallery && lb && lbImg && lbClose) {
+gallery.addEventListener('click', (e) => {
+const t = e.target;
+if (t && t.tagName === 'IMG') {
+lbImg.src = t.src;
+lb.classList.add('open');
+lb.setAttribute('aria-hidden', 'false');
+lbImg.setAttribute('tabindex', '-1');
+lbImg.focus({ preventScroll: true });
+}
+});
+lbClose.addEventListener('click', () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); });
+lb.addEventListener('click', (e) => { if (e.target === lb) { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); } });
+window.addEventListener('keydown', (e) => { if (e.key === 'Escape') { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); } });
+}
+
+
+// Den expand (summary-only toggle safety)
+document.querySelectorAll('.den').forEach(card => {
+card.addEventListener('click', (e) => {
+if (e.target.closest('summary')) {
+const more = card.querySelector('.more');
+if (more) {
+const open = more.getAttribute('data-open') === '1';
+more.style.maxHeight = open ? '0px' : '800px';
+more.style.opacity = open ? '0' : '1';
+more.style.paddingTop = open ? '0' : '.5rem';
+more.setAttribute('data-open', open ? '0' : '1');
+}
+}
+});
+});
+
+
+// Smooth anchor scroll with sticky offset
+function scrollToTarget(id){
+const el = document.querySelector(id);
+if(!el) return false;
+const y = el.getBoundingClientRect().top + window.pageYOffset - 96;
+window.scrollTo({ top: y, behavior: 'smooth' });
+el.setAttribute('tabindex','-1');
+el.focus({ preventScroll: true });
+return true;
+}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click', e=>{
+const id = a.getAttribute('href');
+if(id && id.startsWith('#') && id.length>1){
+const ok = scrollToTarget(id);
+if(ok){ e.preventDefault(); history.replaceState(null,'',id); }
+}
+});
+});
+
+
+// Netlify thanks anchor
+if (location.hash === '#thanks') {
+const t = document.getElementById('thanks');
+if (t) t.style.display = 'block';
+}
+}
+
+
+(async function boot(){
+await loadPartials();
+initCommonUI();
+})();

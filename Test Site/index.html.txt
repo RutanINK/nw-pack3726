@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://nw-pack3726.com/" />
+<meta property="og:image" content="https://www.scouting.org/wp-content/uploads/2023/04/logos-cub-original.png" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#0033A0" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+
+<div class="announce" role="region" aria-label="Next meeting">
+<div class="container">
+<small id="nextMeeting">Next Meeting: Thursdays at 6:00 pm</small>
+</div>
+</div>
+
+
+<div data-include="/partials/header.html"></div>
+
+
+<header id="home" class="hero hero-pro">
+<div class="spark" aria-hidden="true"></div>
+<div class="hero-accent" aria-hidden="true"></div>
+<main id="main" class="container content">
+<div class="hero-grid">
+<div class="hero-copy">
+<div class="eyebrow">Anthony Wayne Area Council · Lincolnway District</div>
+<h1 class="hero-title">Cub Scout <span class="highlight">Pack 3726</span></h1>
+<p class="hero-sub">Family Scouting for grades K–5 in North Webster, Indiana.</p>
+<ul class="hero-points" aria-label="Key highlights">
+<li><strong>Den meetings:</strong> 3× per month</li>
+<li><strong>Pack meeting:</strong> once per month (Pinewood Derby, Blue & Gold, Cake Auction fundraiser, and more)</li>
+<li><strong>Location:</strong> <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=United+Methodist+Church%2C+7822+E+Epworth+Forest+Rd%2C+North+Webster%2C+IN+46555">United Methodist Church</a></li>
+</ul>
+<div class="cta">
+<a href="/join.html" role="button" class="contrast">Join the Adventure</a>
+<a href="/leaders.html" role="button" class="secondary">Contact a Leader</a>
+</div>
+</div>
+<div class="hero-badge" aria-hidden="true">
+<img class="hero-logo" alt="" src="https://www.scouting.org/wp-content/uploads/2023/04/logos-cub-original.png" loading="lazy" decoding="async" width="240" height="240"/>
+</div>
+</div>
+</main>
+<svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+<path d="M0,64 C240,120 480,0 720,48 C960,96 1200,80 1440,24 L1440,120 L0,120 Z" fill="#ffffff"/>
+</svg>
+</header>
+
+
+<main class="container">
+<section aria-labelledby="why-title">
+<h2 id="why-title">Why Families Choose Pack 3726</h2>
+<div class="card-grid">
+<div class="card"><strong>Adventure & Outdoors</strong><br><span class="muted">Campouts, hikes, Pinewood Derby, and more.</span></div>
+<div class="card"><strong>Character & Leadership</strong><br><span class="muted">Do Your Best, Help Other People at All Times.</span></div>
+<div class="card"><strong>Family-Friendly</strong><br><span class="muted">K–5, boys & girls, parents welcome at every event.</span></div>
+</div>
+</section>
+</main>
+
+
+<div data-include="/partials/footer.html"></div>
+
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+<button class="contrast" id="lbClose" aria-label="Close">✕</button>
+<img id="lbImg" alt="Selected photo" />
+</div>
+
+
+<a href="#home" class="floating-top" id="backTop" role="button" aria-label="Back to top">▲</a>
+
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

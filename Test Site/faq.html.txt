@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FAQs – Pack 3726</title>
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="announce"><div class="container"><small id="nextMeeting">Next Meeting: Thursdays at 6:00 pm</small></div></div>
+<div data-include="/partials/header.html"></div>
+
+
+<main id="main" class="container">
+<section aria-labelledby="faq-title">
+<h1 id="faq-title">Frequently Asked Questions</h1>
+<details>
+<summary><strong>Who can join Cub Scouts?</strong></summary>
+<p>Cub Scouting is for boys and girls in grades K–5. Families are welcome at all events.</p>
+</details>
+<details>
+<summary><strong>When and where do you meet?</strong></summary>
+<p>Thursdays at 6:00 pm at United Methodist Church, 7822 E Epworth Forest Rd, North Webster.</p>
+</details>
+<details>
+<summary><strong>How do I get started?</strong></summary>
+<p>Use the contact form or go to our BeAScout page to register.</p>
+</details>
+</section>
+</main>
+
+
+<div data-include="/partials/footer.html"></div>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

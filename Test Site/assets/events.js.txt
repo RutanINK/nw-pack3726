@@ -1,0 +1,75 @@
+// Next 3 events component (re-usable on any page)
+// Usage: add a container <div id="upcomingList"></div> and (optionally) a highlight <div id="nextEvent" class="highlight-bar"></div>
+
+
+const EVENTS_CONFIG = {
+CAL_ID: '37244765f0d940dea56cc046410af977cb35a1401b661d1f53971bf28d9904b0@group.calendar.google.com',
+API_KEY: 'AIzaSyBa09Y3rU9btmK86fMC6ePuSHd4mS1gnO4', // restrict to localhost:5500 and your prod domain
+TZ: 'America/Indiana/Indianapolis'
+};
+
+
+async function fetchNextEvents(maxResults = 3){
+const nowISO = new Date().toISOString();
+const url = new URL(`https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(EVENTS_CONFIG.CAL_ID)}/events`);
+url.searchParams.set('key', EVENTS_CONFIG.API_KEY);
+url.searchParams.set('singleEvents', 'true');
+url.searchParams.set('orderBy', 'startTime');
+url.searchParams.set('timeMin', nowISO);
+url.searchParams.set('maxResults', String(maxResults));
+const res = await fetch(url);
+if (!res.ok) throw new Error('Calendar fetch failed');
+return res.json();
+}
+
+
+function fmt(ev){
+const start = ev.start.dateTime ? new Date(ev.start.dateTime) : new Date(ev.start.date);
+const when = ev.start.dateTime
+? start.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short', timeZone: EVENTS_CONFIG.TZ })
+: start.toLocaleDateString([], { timeZone: EVENTS_CONFIG.TZ });
+const where = ev.location ? ` • ${ev.location}` : '';
+return { title: ev.summary || 'Untitled', when, where, html: `${ev.summary} — ${when}${where}` };
+}
+
+
+async function renderEvents(){
+const listEl = document.getElementById('upcomingList');
+const nextEl = document.getElementById('nextEvent');
+try {
+if (nextEl) nextEl.setAttribute('aria-busy','true');
+if (listEl) listEl.innerHTML = '<small class="muted">Loading…</small>';
+
+
+const data = await fetchNextEvents(3);
+const items = data.items || [];
+if (items.length === 0) {
+if (nextEl) nextEl.textContent = 'No upcoming events found.';
+if (listEl) listEl.innerHTML = '';
+return;
+}
+
+
+const mapped = items.map(fmt);
+if (nextEl) nextEl.textContent = mapped[0].html;
+
+
+if (listEl) {
+listEl.innerHTML = mapped.map(m => `
+<li class="card" style="margin: .5rem 0;">
+<strong>${m.title}</strong><br/>
+<span class="muted">${m.when}${m.where}</span>
+</li>`).join('');
+}
+} catch (e) {
+console.warn(e);
+if (nextEl) nextEl.textContent = 'Unable to load upcoming events.';
+if (listEl) listEl.innerHTML = '<small class="muted">See full calendar below.</small>';
+} finally {
+if (nextEl) nextEl.setAttribute('aria-busy','false');
+}
+}
+
+
+// Auto-run on pages that include this file
+renderEvents();

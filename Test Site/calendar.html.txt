@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Calendar – Pack 3726</title>
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="announce"><div class="container"><small id="nextMeeting">Next Meeting: Thursdays at 6:00 pm</small></div></div>
+<div data-include="/partials/header.html"></div>
+
+
+<main id="main" class="container">
+<section aria-labelledby="calendar-title">
+<h1 id="calendar-title">Calendar</h1>
+<div class="grid" style="align-items:start; gap:1rem;">
+<div style="min-width:260px;">
+<h3 style="margin:.25rem 0;">Upcoming Highlights</h3>
+<div class="card" style="min-height:120px; padding:.5rem;">
+<div id="nextEvent" class="highlight-bar" aria-live="polite" aria-busy="true">Loading next event…</div>
+</div>
+<ul id="upcomingList" style="list-style:none; padding-left:0; margin-top:.75rem;"></ul>
+</div>
+<div style="flex:1 1 auto; min-width:280px; overflow:auto; border:1px solid #e5e7eb; border-radius:.5rem;">
+<iframe
+title="Pack 3726 Calendar"
+style="border:0" width="100%" height="650" loading="lazy"
+src="https://calendar.google.com/calendar/embed?src=37244765f0d940dea56cc046410af977cb35a1401b661d1f53971bf28d9904b0%40group.calendar.google.com&ctz=America%2FIndiana%2FIndianapolis"
+frameborder="0" scrolling="no"></iframe>
+</div>
+<div style="min-width:220px;">
+<p><strong>Add this calendar:</strong></p>
+<p>
+<a role="button" href="https://calendar.google.com/calendar/u/0/r?cid=37244765f0d940dea56cc046410af977cb35a1401b661d1f53971bf28d9904b0%40group.calendar.google.com" target="_blank" rel="noopener">Add to Google Calendar</a>
+</p>
+<p class="muted">Times shown in Eastern (America/Indiana/Indianapolis).</p>
+</div>
+</div>
+</section>
+</main>
+
+
+<div data-include="/partials/footer.html"></div>
+<script src="/assets/site.js" defer></script>
+<script src="/assets/events.js" defer></script>
+</body>
+</html>

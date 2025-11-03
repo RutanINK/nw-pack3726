@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>New Families – Pack 3726</title>
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="announce"><div class="container"><small id="nextMeeting">Next Meeting: Thursdays at 6:00 pm</small></div></div>
+<div data-include="/partials/header.html"></div>
+
+
+<main id="main" class="container">
+<section aria-labelledby="newfam-title">
+<h1 id="newfam-title">New Families</h1>
+<div class="card-grid">
+<div class="card">
+<strong>How to Join</strong>
+<ol>
+<li>Visit our <a href="https://beascout.scouting.org/list/?zip=46567&program%5B%5D=pack&unitID=54840" target="_blank" rel="noopener">BeAScout page</a> and submit your application, or contact us above.</li>
+<li>We’ll confirm by email from <a href="mailto:hello@nw-pack3726.com">hello@nw-pack3726.com</a>.</li>
+<li>Come to any Thursday night Den Meeting at 6:00 pm.</li>
+</ol>
+</div>
+<div class="card">
+<strong>Every Meeting</strong>
+<ul>
+<li>Arrive a few minutes early to check in and find your den.</li>
+<li><strong>Adult partners stay</strong> for <strong>Lions and Tigers</strong>. For others, parent/guardian presence is encouraged.</li>
+<li>Bring a water bottle; wear closed-toe shoes for active games.</li>
+</ul>
+</div>
+<div class="card">
+<strong>Communication</strong>
+<ul>
+<li>Pack emails from <a href="mailto:hello@nw-pack3726.com">hello@nw-pack3726.com</a>.</li>
+<li>Add our Pack Calendar from the Calendar page.</li>
+<li>Follow us: <a href="https://www.facebook.com/share/g/1PWsk6nMLS/" target="_blank" rel="noopener">Facebook</a> • <a href="https://band.us/@cubscoutpack3726" target="_blank" rel="noopener">Band</a></li>
+</ul>
+</div>
+<div class="card">
+<strong>What We Do</strong>
+<ul>
+<li>Pinewood Derby, campouts, hikes, service projects.</li>
+<li>Age-appropriate adventures by den (see Den Hub).</li>
+<li>Pack awards and recognition at pack meetings.</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+
+
+<div data-include="/partials/footer.html"></div>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

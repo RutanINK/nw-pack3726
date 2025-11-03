@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Photos – Pack 3726</title>
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="announce"><div class="container"><small id="nextMeeting">Next Meeting: Thursdays at 6:00 pm</small></div></div>
+<div data-include="/partials/header.html"></div>
+
+
+<main id="main" class="container">
+<section aria-labelledby="photos-title">
+<h1 id="photos-title">Photos & Adventures</h1>
+<div class="grid-photos" id="gallery">
+<img src="https://cdn2.webdamdb.com/220th_sm_UZcs03Ajj6m41rjh.jpg?1751413805" alt="Scouts hiking together on a sunny day" loading="lazy" decoding="async" width="640" height="400"/>
+<img src="https://cdn2.webdamdb.com/220th_sm_YKLgYsk4vs39.jpg?1611958886" alt="Scouts learning knots during a den meeting" loading="lazy" decoding="async" width="640" height="400"/>
+<img src="https://cdn2.webdamdb.com/220th_sm_2JHA3nRffkW362fF.jpg?1751415007" alt="Pinewood Derby cars lined up on the track" loading="lazy" decoding="async" width="640" height="400"/>
+<img src="https://cdn2.webdamdb.com/220th_sm_6ZocXGCUM72.jpg?1620746351" alt="Campfire evening at a family campout" loading="lazy" decoding="async" width="640" height="400"/>
+</div>
+</section>
+</main>
+
+
+<div data-include="/partials/footer.html"></div>
+
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+<button class="contrast" id="lbClose" aria-label="Close">✕</button>
+<img id="lbImg" alt="Selected photo" />
+</div>
+<a href="#photos-title" class="floating-top" id="backTop" role="button" aria-label="Back to top">▲</a>
+
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

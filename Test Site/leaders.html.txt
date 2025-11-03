@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leaders & Contact – Pack 3726</title>
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="announce"><div class="container"><small id="nextMeeting">Next Meeting: Thursdays at 6:00 pm</small></div></div>
+<div data-include="/partials/header.html"></div>
+
+
+<main id="main" class="container">
+<section aria-labelledby="leaders-title">
+<h1 id="leaders-title">Leaders & Contact</h1>
+<article class="card">
+<header><strong>Volunteer Leadership</strong></header>
+<ul>
+<li><strong>Cubmaster:</strong> Jesse Rutan</li>
+<li><strong>Chartered Organization:</strong> North Webster Lions Club</li>
+</ul>
+</article>
+
+
+<article class="card">
+<header><strong>Contact</strong></header>
+<p>
+<strong>Phone:</strong> <a href="tel:12602156307" rel="nofollow">(260) 215-6307</a><br />
+<strong>Email:</strong> <a href="mailto:hello@nw-pack3726.com?subject=Inquiry%20for%20Pack%203726">hello@nw-pack3726.com</a><br />
+<strong>Join page:</strong> <a href="https://beascout.scouting.org/list/?zip=46567&program%5B%5D=pack&unitID=54840" target="_blank" rel="noopener">BeAScout – Pack 3726</a>
+</p>
+</article>
+
+
+<h3 id="contact-form-embed">Send us a message</h3>
+<div class="card" style="padding:1rem;">
+<form name="contact-pack3726" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" action="/thanks.html" autocomplete="on">
+<input type="hidden" name="form-name" value="contact-pack3726" />
+<p style="display:none"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+<div class="grid">
+<label>Parent/Guardian Name
+<input name="name" autocomplete="name" required />
+</label>
+<label>Email
+<input type="email" name="email" autocomplete="email" required />
+</label>
+</div>
+<div class="grid">
+<label>Phone (optional)
+<input type="tel" name="phone" inputmode="tel" autocomplete="tel" />
+</label>
+<label>Scout Grade (K–5)
+<select name="grade" autocomplete="off">
+<option value="K">K</option><option value="1">1</option>
+<option value="2">2</option><option value="3">3</option>
+<option value="4">4</option><option value="5">5</option>
+</select>
+</label>
+</div>
+<label>Message
+<textarea name="message" rows="5" required></textarea>
+</label>
+<div data-netlify-recaptcha="true"></div>
+<div style="display:flex;gap:.5rem;align-items:center;">
+<button type="submit">Send</button>
+<a class="secondary" href="mailto:hello@nw-pack3726.com?subject=Pack%203726%20Inquiry">Or email us directly</a>
+</div>
+</form>
+</div>
+</section>
+</main>
+
+
+<div data-include="/partials/footer.html"></div>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
